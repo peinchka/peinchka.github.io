@@ -21,7 +21,7 @@
 					<div id="intro">
 						<h1>Ed Williams'<br />
 						Portfolio</h1>
-						<p>An M.Sci. Physics graduate with aspirations of becoming a graphics engineer, having just completed an <br />
+						<p>An M.Sci. Physics graduate with aspirations of becoming a software engineer in the games industry, having just completed an <br />
 							M.Sc. in Computer Game Engineering with Distinction at Newcastle University </a>.</p>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
@@ -59,14 +59,19 @@
 						
 								<article>
 									<header>
-										<h2><a href="https://youtu.be/bpfKMic1Rno" target="_blank">Scene 1<br />
+										<h2><a href="https://youtu.be/vMSxgDT6Usw" target="_blank">NHS VR Scenes<br />
 											Made in Unity</a></h2>
 									</header>
-									<div class="video-container"><iframe width="640" height="360" src="https://www.youtube.com/embed/bpfKMic1Rno" target="_blank" frameborder="0" allowfullscreen></iframe></div>
-									<p>VR scene, made single-handedly from scratch in Unity, on a shoe-string budget.</p><br/><br/><br/>
+									<div class="video-container"><iframe width="640" height="360" src="https://www.youtube.com/embed/vMSxgDT6Usw" target="_blank" frameborder="0" allowfullscreen></iframe></div>
+									<br/><p>Ten VR scenes were single-handedly crafted from scratch on a shoe-string budget, depicting scenarios designed by the NHS.
+											Many assets had to be sourced from TurboSquid and CGTrader, so generally were not designed to render efficiently in a game engine.
+											<br/><br/>To remedy this, the OBJ-editor application written for my M.Sc. Final Project was re-used to combine separate objects that 
+											shared the same materials, dramatically reducing draw calls, and this was especially crucial for the highly-detailed bus model. 
+											Other pieces of bus geometry required separation and translation, in order to realistically animate the doors with correct hinge axes.
+									</p><br/><br/><br/>
 									<!-- <ul class="actions special">
 										<li><a href="https://github.com/peinchka/CSC8505" target="_blank" class="button">Full Code on GitHub</a></li> -->
-									</ul>
+									<!-- </ul> -->
 								</article>
 
 								<article>
@@ -75,21 +80,23 @@
 											Made in Unity</a></h2>
 									</header>
 									<div class="video-container"><iframe width="640" height="360" src="https://www.youtube.com/embed/7cn_qUUQnsc" target="_blank" frameborder="0" allowfullscreen></iframe></div>
-									<p>Made in Unity, from Building Information Modelling IFC files.</p><br/><br/><br/>
-									<!-- <ul class="actions special">
-										<li><a href="https://github.com/peinchka/CSC8505" target="_blank" class="button">Full Code on GitHub</a></li> -->
+									<br/><p>Architectural Building Information Modelling (BIM) data of Newcastle University's Urban Sciences Building was made available
+										in the form of IFC files. These were converted into OBJ mesh files, resulting in over 22GB of geometry, 140,000 objects and 
+										120 million vertices. <br/><br/>To process this data and make it "game engine-ready", a 10,000-line OBJ-editor application was written in 
+										C++. Selective mesh decimation and occlusion culling techniques were subsequently utilised to help maintain a smooth framerate in VR.
+									    Real-time sensor data from the building is streamed into the simulation via a WebAPI, allowing it to be visualised.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/peinchka/OBJEditor" target="_blank" class="button">OBJ File Editor Code on GitHub</a></li>
 									</ul>
 								</article>
-
-
 								
 								<article>
 									<header>
-										<h2><a href="https://www.youtube.com/watch?v=ivSIaSsSdNI" target="_blank">Rapid Prototype<br />
+										<h2><a href="https://www.youtube.com/watch?v=ivSIaSsSdNI" target="_blank">Rapid Game Prototype<br />
 											Made in Unity</a></h2>
 									</header>
 									<div class="video-container"><iframe width="640" height="360" src="https://www.youtube.com/embed/ivSIaSsSdNI" target="_blank" frameborder="0" allowfullscreen></iframe></div>
-									<p>Made over a period of two weeks and two days, while learning Unity from scratch, using free Unity assets and a self-made soundtrack.</p><br/><br/><br/>
+									<br/><p>Made over a period of two weeks and two days, while learning Unity from scratch, using free Unity assets and a self-made soundtrack.</p><br/><br/><br/>
 									<ul class="actions special">
 										<li><a href="https://github.com/peinchka/CSC8505" target="_blank" class="button">Full Code on GitHub</a></li>
 									</ul>
@@ -97,11 +104,11 @@
 
 								<article>
 									<header>
-										<h2><a href="https://www.youtube.com/watch?v=ZEam_BAc06g" target="_blank">Graphics<br />
-										Coursework</a></h2>
+										<h2><a href="https://www.youtube.com/watch?v=ZEam_BAc06g" target="_blank">Graphics Coursework<br />
+										OpenGL/C++</a></h2>
 									</header>
 									<div class="video-container"><iframe width="640" height="360" src="https://www.youtube.com/embed/ZEam_BAc06g" target="_blank" frameborder="0" allowfullscreen></iframe></div>
-									<p>Graphical techniques include: Bump-mapped heightmap with gloss/specular maps, shadow-mapping with multiple lights, time-varying 
+									<br/><p>Graphical techniques include: Bump-mapped heightmap with gloss/specular maps, shadow-mapping with multiple lights, time-varying 
 										skybox, deferred rendering with gloss map and skybox using stencil test, split-screen, depth-of-field blur, motion blur, HDR bloom, double-vision, 
 										tone-mapping and Sobel edge-detection.</p>
 									<ul class="actions special">
@@ -114,7 +121,7 @@
 										<h2><a href="https://www.youtube.com/watch?v=BDL3kK2THqo" target="_blank">Game Technologies Courswork</a></h2>
 									</header>
 									<div class="video-container"><iframe width="640" height="360" src="https://www.youtube.com/embed/xBDL3kK2THqo" target="_blank" frameborder="0" allowfullscreen></iframe></div>
-									<p>Golf game with realistic physics, including an AI robot with path-finding (using the A* algorithm). High scores can be saved over a client-server network.</p>
+									<br/><p>Golf game with realistic physics, including an AI robot with path-finding (using the A* algorithm). High scores can be saved over a client-server network.</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/peinchka/CSC8503" target="_blank" class="button">Full Code on GitHub</a></li>
 									</ul>
@@ -126,7 +133,7 @@
 										Integration Demo</a></h2>
 									</header>
 									<div class="video-container"><iframe width="640" height="360" src="https://www.youtube.com/embed/XXqEzzzhLmI" target="_blank" frameborder="0" allowfullscreen></iframe></div>
-									<p>I was entrusted with the task of incorporating the Bullet Physics engine into our team project
+									<br/><p>I was entrusted with the task of incorporating the Bullet Physics engine into our team project
 										game framework, and this was a quick scene created to assess its performance with 2000+ objects.</p>
 
 									</ul>

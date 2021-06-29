@@ -1,0 +1,95 @@
+using UnityEngine;
+
+public class FrontDoors : MonoBehaviour
+{
+    private float speed = 80.0f;
+    private float yRotation = 0.0f;
+    private bool toggleOpen = false;
+    private bool change = false;
+
+    private AudioSource source;
+    private AudioClip clip1;
+    private AudioClip clip2;
+
+    void Start()
+    {
+        AudioSource[] audioSources = GetComponents<AudioSource>();
+        source = audioSources[0];
+        clip1 = audioSources[0].clip;
+        clip2 = audioSources[1].clip;
+    }
+
+    public void OpenFrontDoors()
+    {
+        toggleOpen = true;
+        change = true;
+        source.Stop();
+        source.PlayOneShot(clip1);
+    }
+
+    public void CloseFrontDoors()
+    {
+        toggleOpen = false;
+        change = true;
+        source.Stop();
+        source.PlayOneShot(clip2);
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            toggleOpen = !toggleOpen;
+            change = true;
+            if (toggleOpen)
+            {
+                source.Stop();
+                source.PlayOneShot(clip1);
+                
+            }             
+            else
+            {
+                source.Stop();
+                source.PlayOneShot(clip2);
+            }            
+        }
+
+        if (change)
+        {
+            if (toggleOpen)
+            {
+                if (yRotation > -90.0f)
+                {
+                    if (yRotation < -90f + Time.deltaTime * speed)
+                    {
+                        yRotation = -90.0f;
+                        change = false;
+                    }
+                    else
+                    {
+                        yRotation -= Time.deltaTime * speed;
+                    }
+                }
+            }
+            else
+            {
+                if (yRotation != 0.0f)
+                {
+                    if (yRotation > -2.0f)
+                    {
+                        yRotation = 0.0f;
+                        change = false;
+                    }
+                    else
+                    {
+                        yRotation += Time.deltaTime * speed;
+                    }
+                }
+            }
+            transform.GetChild(0).localEulerAngles = new Vector3(0, -yRotation, 0);
+            transform.GetChild(0).GetChild(1).localEulerAngles = new Vector3(0, yRotation * 2.0f, 0);
+            transform.GetChild(1).localEulerAngles = new Vector3(0, yRotation, 0);
+            transform.GetChild(1).GetChild(1).localEulerAngles = new Vector3(0, -yRotation * 2.0f, 0);
+        }       
+    }
+}

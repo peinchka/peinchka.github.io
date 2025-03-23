@@ -5,11 +5,13 @@
 #EXT-X-PLAYLIST-TYPE:EVENT
 #EXT-X-INDEPENDENT-SEGMENTS
 #EXTINF:700.000000,
-https://s3-eu-west-1.amazonaws.com/zerolight.tech2.2dod.eu-west-1/omnistream/application/67c501fd8dae51f6bc1c2292/e2f0c8cef38b79d4/84029cd4e2663757a0c16bb4ca85ed9b425fe02e_0.ts
+https://peinchka.github.io/images/BigTest/84029cd4e2663757a0c16bb4ca85ed9b425fe02e_0.ts
 #EXTINF:700.000000,
-https://s3-eu-west-1.amazonaws.com/zerolight.tech2.2dod.eu-west-1/omnistream/application/67c501fd8dae51f6bc1c2292/e2f0c8cef38b79d4/84029cd4e2663757a0c16bb4ca85ed9b425fe02e_1.ts
+https://peinchka.github.io/images/BigTest/84029cd4e2663757a0c16bb4ca85ed9b425fe02e_1.ts
 #EXTINF:700.000000,
-https://s3-eu-west-1.amazonaws.com/zerolight.tech2.2dod.eu-west-1/omnistream/application/67c501fd8dae51f6bc1c2292/e2f0c8cef38b79d4/84029cd4e2663757a0c16bb4ca85ed9b425fe02e_2.ts
+https://peinchka.github.io/images/BigTest/84029cd4e2663757a0c16bb4ca85ed9b425fe02e_2.ts
 #EXTINF:700.000000,
-https://s3-eu-west-1.amazonaws.com/zerolight.tech2.2dod.eu-west-1/omnistream/application/67c501fd8dae51f6bc1c2292/e2f0c8cef38b79d4/84029cd4e2663757a0c16bb4ca85ed9b425fe02e_3.ts
+https://peinchka.github.io/images/BigTest/84029cd4e2663757a0c16bb4ca85ed9b425fe02e_3.ts
+#EXTINF:700.000000,
+https://peinchka.github.io/images/BigTest/84029cd4e2663757a0c16bb4ca85ed9b425fe02e_4.ts
 #EXT-X-ENDLIST
